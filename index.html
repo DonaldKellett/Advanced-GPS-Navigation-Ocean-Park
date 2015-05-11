@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HTML5 Geolocation (GPS Navigation) with Error Handling</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollex.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">HTML5 Geolocation</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="content">
+					<header>
+						<h2>HTML5 Geolocation With Error Handling</h2>
+						<p>Trust me, you'll enjoy it.  Scroll down to explore!</p>
+					</header>
+					<span class="image"><img src="images/Earth.jpg" alt="" /></span>
+				</div>
+				<a href="#four" class="goto-next scrolly">Next</a>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="wrapper style1 special fade-up">
+				<div class="container">
+					<div class="box alt">
+						<div class="row uniform" style="text-align: left;">
+							<section class="6u 12u(medium)">
+								<h3>Hong Kong Ocean Park</h3>
+								<p>Below is the map for Hong Kong Ocean Park.</p>
+								<img src="http://maps.googleapis.com/maps/api/staticmap?center=22.246661,114.175724&zoom=17&size=400x300&sensor=false" />
+								<p>Use this map and the map below to navigate yourself to Hong Kong Ocean Park.</p>
+							</section>
+							<section class="6u 12u(medium)">
+								<div id="javascript" style="display: none;">
+									<h3>GPS Tracking</h3>
+									<p>Please click on the button below to enable GPS Tracking.</p>
+									<img src="images/Earth.jpg" id="map" />
+									<p><span id="error" style="color: red;"></span></p>
+									<p><a id="enableGPS" class="button" href="javascript:void(0)" onclick="gpsNavigation.getPosition()">Enable GPS Tracking</a></p>
+								</div>
+								<noscript>
+									<h3>Javascript Disabled</h3>
+									<p>Sorry, you cannot use the following feature because you have disabled Javascript in your browser.  Please enable it to use the GPS Service.</p>
+								</noscript>	
+							</section>
+							<section class="12u">
+								<h3>How this works and what this does</h3>
+								<p>Once the "Enable GPS Tracking" button is clicked, the code starts to run.  The code constantly detects your current location and displays your most recent location on a map (hence the <strong>tracking</strong>).  However, you must understand that the code does NOT send anything to the server or any third-party due to the nature of Javascript.  To send information to a server or third-party, another coding language is required (and I know little other than HTML, CSS and Javascript, neither of which stores and sends data elsewhere).</p>
+								<p>If something occurs that prevents the code from tracking your location, it will throw an error and display it to the user (e.g. Try turning off the wifi and enable GPS Tracking).</p>
+								<p><em><strong>There is also one very special feature: theoretically, if you reach Ocean Park, this website/app will alert to you once stating that you have arrived at Ocean Park.  However, this is yet to be tested since I do not have enough time to bring my whole computer to Ocean Park to check it out.</strong></em></p>
+							</section>
+							<section class="12u">
+								<h3>Copyright and Credit</h3>
+								<p>This project is created by <a href="http://donaldkellett.github.io" target="_blank">Donald Leung</a> and although he has no real copyright to it (i.e. he cannot actually sue anyone for misusing this), please credit him and provide a link to his website/GitHub account if you decide to use, distribute and/or modify it.  The file for all the code for GPS Navigation can be found in <a href="js/GPS.js">GPS.js</a> in the <strong>js</strong> folder.</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; 2015 Donald Leung. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+		<script src="js/GPS.js"></script>
+	</body>
+</html>
